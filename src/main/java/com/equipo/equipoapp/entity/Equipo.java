@@ -70,7 +70,7 @@ public class Equipo implements Serializable{
 
 	@OneToMany(cascade = CascadeType.ALL,
 			fetch = FetchType.LAZY,
-			mappedBy = "marcaidmarca")
+			mappedBy = "equiposicoin")
 			private List<marcaModelo> marcamodelo;
 	
 	public String getSicoin() {
