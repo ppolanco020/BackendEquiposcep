@@ -70,8 +70,7 @@ public class equipoProcesador implements Serializable{
 	public void setEquiposicoin(String equiposicoin) {
 		this.equiposicoin = equiposicoin;
 	}
-	
-	
+
 
 	public String getVelocidad() {
 		return velocidad;
@@ -103,6 +102,5 @@ public class equipoProcesador implements Serializable{
 	}
 
 
-	
 	
 }

@@ -40,10 +40,6 @@ public class Equipo implements Serializable{
 	@Column(name = "nombrehost")
 	private String nombrehost;
 
-	@Column(name = "procesadorIdprocesador")
-	private String procesadoridprocesador;
-	
-	
 	@Column(name = "ramIdram")
 	private String ramidram;
 
@@ -71,7 +67,7 @@ public class Equipo implements Serializable{
 			mappedBy = "equiposicoin")
 			private List<marcaModelo> marcamodelo;
 			
-			@OneToMany(cascade = CascadeType.ALL,
+	@OneToMany(cascade = CascadeType.ALL,
 			fetch = FetchType.LAZY,
 			mappedBy = "equiposicoin")
 
@@ -93,14 +89,6 @@ public class Equipo implements Serializable{
 
 	public void setNombrehost(String nombrehost) {
 		this.nombrehost = nombrehost;
-	}
-
-	public String getProcesadoridprocesador() {
-		return procesadoridprocesador;
-	}
-
-	public void setProcesadoridprocesador(String procesadoridprocesador) {
-		this.procesadoridprocesador = procesadoridprocesador;
 	}
 
 	public String getRamidram() {
