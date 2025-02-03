@@ -43,8 +43,6 @@ public class Equipo implements Serializable{
 	@Column(name = "procesadorIdprocesador")
 	private String procesadoridprocesador;
 	
-	@Column(name = "marcaIdmarca")
-	private String marcaidmarca;
 	
 	@Column(name = "ramIdram")
 	private String ramidram;
@@ -72,6 +70,14 @@ public class Equipo implements Serializable{
 			fetch = FetchType.LAZY,
 			mappedBy = "equiposicoin")
 			private List<marcaModelo> marcamodelo;
+			
+			@OneToMany(cascade = CascadeType.ALL,
+			fetch = FetchType.LAZY,
+			mappedBy = "equiposicoin")
+
+			private List<equipoProcesador> equipoprocesador;
+			
+			
 	
 	public String getSicoin() {
 		return sicoin;
@@ -95,14 +101,6 @@ public class Equipo implements Serializable{
 
 	public void setProcesadoridprocesador(String procesadoridprocesador) {
 		this.procesadoridprocesador = procesadoridprocesador;
-	}
-
-	public String getMarcaidmarca() {
-		return marcaidmarca;
-	}
-
-	public void setMarcaidmarca(String marcaidmarca) {
-		this.marcaidmarca = marcaidmarca;
 	}
 
 	public String getRamidram() {
@@ -168,6 +166,15 @@ public class Equipo implements Serializable{
 	public void setMarcamodelo(List<marcaModelo> marcamodelo) {
 		this.marcamodelo = marcamodelo;
 	}
+
+	public List<equipoProcesador> getEquipoprocesador() {
+		return equipoprocesador;
+	}
+
+	public void setEquipoprocesador(List<equipoProcesador> equipoprocesador) {
+		this.equipoprocesador = equipoprocesador;
+	}
+
 
 	
 	
