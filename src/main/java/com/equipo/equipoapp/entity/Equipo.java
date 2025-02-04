@@ -28,8 +28,6 @@ public class Equipo implements Serializable{
 	private static final long serialVersionUID = 8990595128143375776L;
 
 	
-
-
 	@Id
 	@Column(name = "sicoin")
 	//@GeneratedValue(strategy = GenerationType.IDENTITY)
