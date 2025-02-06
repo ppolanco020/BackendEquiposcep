@@ -51,6 +51,8 @@ public class Usuario implements Serializable{
 
 	@Column(name = "ubicacion_idubicacion")
 	private String ubicacionidubicacion;
+	
+	
 
 
 	
@@ -105,6 +107,8 @@ public class Usuario implements Serializable{
 	public void setUbicacionidubicacion(String ubicacionidubicacion) {
 		this.ubicacionidubicacion = ubicacionidubicacion;
 	}
+
+
 
 	
 	
