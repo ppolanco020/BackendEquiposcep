@@ -30,9 +30,9 @@ public class usuarioUbicacion implements Serializable{
 
 	@Id
 	@Column(name = "idusuarioUbicacion")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional=false)
-	private Integer idusuarioubicacion;
+	private String idusuarioubicacion;
 	
 
 	@Column(name = "ubicacionIdubicacion")
@@ -41,11 +41,11 @@ public class usuarioUbicacion implements Serializable{
 	@Column(name = "usuarioEmail")
 	private String usuarioemail;
 
-	public Integer getIdusuarioubicacion() {
+	public String getIdusuarioubicacion() {
 		return idusuarioubicacion;
 	}
 
-	public void setIdusuarioubicacion(Integer idusuarioubicacion) {
+	public void setIdusuarioubicacion(String idusuarioubicacion) {
 		this.idusuarioubicacion = idusuarioubicacion;
 	}
 
