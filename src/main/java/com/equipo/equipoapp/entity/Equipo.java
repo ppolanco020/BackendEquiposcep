@@ -49,6 +49,10 @@ public class Equipo implements Serializable{
 	
 	@Column(name = "inicioGarantia")
 	private String iniciogarantia;
+	
+	@Column(name = "finGarantia")
+	private String fingarantia;
+
 
 	@Column(name = "antiguedad")
 	private Integer antiguedad;
@@ -119,6 +123,15 @@ public class Equipo implements Serializable{
 
 	public void setIniciogarantia(String iniciogarantia) {
 		this.iniciogarantia = iniciogarantia;
+	}
+	
+
+	public String getFingarantia() {
+		return fingarantia;
+	}
+
+	public void setFingarantia(String fingarantia) {
+		this.fingarantia = fingarantia;
 	}
 
 	public Integer getAntiguedad() {
