@@ -37,13 +37,18 @@ public class ModeloService {
 	
 	
 	
-	@GetMapping(path ="/buscar/{modelo}")
-	public List<Modelo> buscarPorMarca(@PathVariable String modelo){
-		return modelorepository.findByModelo("%%"+modelo+"%%");
+	@GetMapping(path ="/buscar/{idmodelo}")
+	public List<Modelo> buscarPoridmodelo(@PathVariable String idmodelo){
+		return modelorepository.findByidmodeloLike("%%"+idmodelo+"%%");
+	}
+	/*
+	@GetMapping(path ="/buscar/{pormarca}")
+	public List<Modelo> buscarPorMarca(@PathVariable String marca){
+		return modelorepository.findBymarcaidmarcaLike("%%"+marca+"%%");
 	}
 	
 	
-	
+	*/
 	
 
 	@PostMapping(path="/guardar")

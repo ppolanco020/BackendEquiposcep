@@ -113,7 +113,7 @@ public class Equipo implements Serializable{
 		return estadoidestado;
 	}
 
-	public void setEstadoidestado(Integer estadoidestado) {
+	public void setEstadoidestado(Integer estadoidestado) {	
 		this.estadoidestado = estadoidestado;
 	}
 
