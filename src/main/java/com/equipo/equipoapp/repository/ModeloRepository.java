@@ -16,8 +16,7 @@ import org.springframework.stereotype.Repository;
 @Repository("modeloRepository")
 
 public interface ModeloRepository extends  JpaRepository<Modelo, String>  {
-	public List<Modelo>findByidmodeloLike(String modelo);
-	public List<Modelo>findBymarcaidmarcaLike(String marca);
-
+	//public List<Modelo>findByidmodeloLike(String modelo);
+	Optional<Modelo>findBymarcaidmarca(Integer marca);
 	
 }

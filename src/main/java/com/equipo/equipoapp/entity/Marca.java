@@ -36,27 +36,23 @@ public class Marca implements Serializable{
 
 	@Id
 	@Column(name = "idmarca")
-	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional=false)
-	private String idmarca;
+	private Integer idmarca;
 	
 	
 	@Column(name = "marca")
 	private String marca;
 	
 
-	
-
-
-
-	public String getIdmarca() {
+	public Integer getIdmarca() {
 		return idmarca;
 	}
 
 
 
 
-	public void setIdmarca(String idmarca) {
+	public void setIdmarca(Integer idmarca) {
 		this.idmarca = idmarca;
 	}
 

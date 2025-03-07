@@ -39,8 +39,8 @@ public class MarcaService {
 	
 	
 	@GetMapping(path ="/buscar/{marca}")
-	public List<Marca> buscarPorMarca(@PathVariable String marca){
-		return marcarepository.findByMarca("%%"+marca+"%%");
+	public List<Marca> buscarPorMarca(@PathVariable Integer marca){
+		return marcarepository.findByidmarca(marca);
 	}
 	
 	

@@ -18,7 +18,6 @@ import com.equipo.equipoapp.entity.Modelo;
 import com.equipo.equipoapp.repository.ModeloRepository;
 
 
-
 @RestController
 @RequestMapping("/modelo")
 @CrossOrigin
@@ -36,19 +35,31 @@ public class ModeloService {
 	}
 	
 	
-	
+	/*
 	@GetMapping(path ="/buscar/{idmodelo}")
 	public List<Modelo> buscarPoridmodelo(@PathVariable String idmodelo){
 		return modelorepository.findByidmodeloLike("%%"+idmodelo+"%%");
-	}
+	}*/
 	/*
-	@GetMapping(path ="/buscar/{pormarca}")
-	public List<Modelo> buscarPorMarca(@PathVariable String marca){
-		return modelorepository.findBymarcaidmarcaLike("%%"+marca+"%%");
+	@GetMapping(path ="/buscar/marca/{marcaidmarca}")
+	public List<Modelo> buscarPormarcaidmarca(@PathVariable Integer marcaz){
+		return modelorepository.findBymarcaidmarca(marcaz);
+	}*/
+	
+	
+	@GetMapping(path ="/buscar/{marcaidmarca}")
+	public Modelo buscarporId(@PathVariable int marcaidmarca){
+	  
+		Optional<Modelo> modelo = modelorepository.findBymarcaidmarca(marcaidmarca);
+	
+			
+			return modelo.isPresent() ? modelo.get() : null;
+
+	
 	}
 	
 	
-	*/
+	
 	
 
 	@PostMapping(path="/guardar")
