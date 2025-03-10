@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.equipo.equipoapp.entity.Modelo;
@@ -40,24 +41,13 @@ public class ModeloService {
 	public List<Modelo> buscarPoridmodelo(@PathVariable String idmodelo){
 		return modelorepository.findByidmodeloLike("%%"+idmodelo+"%%");
 	}*/
-	/*
-	@GetMapping(path ="/buscar/marca/{marcaidmarca}")
-	public List<Modelo> buscarPormarcaidmarca(@PathVariable Integer marcaz){
-		return modelorepository.findBymarcaidmarca(marcaz);
-	}*/
-	
-	
-	@GetMapping(path ="/buscar/{marcaidmarca}")
-	public Modelo buscarporId(@PathVariable int marcaidmarca){
-	  
-		Optional<Modelo> modelo = modelorepository.findBymarcaidmarca(marcaidmarca);
-	
-			
-			return modelo.isPresent() ? modelo.get() : null;
 
 	
-	}
 	
+	@GetMapping(path ="/buscar/marca/{marcaidmarca}")
+	public List<Modelo> buscarPormarcaidmarca(@PathVariable Integer marcaidmarca){
+		return modelorepository.findBymarcaidmarca(marcaidmarca);
+	}
 	
 	
 	

@@ -34,9 +34,9 @@ public class Modelo implements Serializable{
 
 	@Id
 	@Column(name = "idmodelo")
-	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional=false)
-	private String idmodelo;
+	private Integer idmodelo;
 	
 	@Column(name = "modelo")
 	private String modelo;
@@ -46,15 +46,14 @@ public class Modelo implements Serializable{
 	private Integer marcaidmarca;
 
 
-	public String getIdmodelo() {
+	public Integer getIdmodelo() {
 		return idmodelo;
 	}
 
 
-	public void setIdmodelo(String idmodelo) {
+	public void setIdmodelo(Integer idmodelo) {
 		this.idmodelo = idmodelo;
 	}
-
 
 	public String getModelo() {
 		return modelo;
