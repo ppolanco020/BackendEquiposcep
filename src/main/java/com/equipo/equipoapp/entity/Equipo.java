@@ -38,27 +38,11 @@ public class Equipo implements Serializable{
 	@Column(name = "nombrehost")
 	private String nombrehost;
 
-	@Column(name = "ramIdram")
-	private String ramidram;
 
 	@Column(name = "serie")
 	private String serie;
 	
-	@Column(name = "estadoIdestado")
-	private Integer estadoidestado;
 	
-	@Column(name = "inicioGarantia")
-	private String iniciogarantia;
-	
-	@Column(name = "finGarantia")
-	private String fingarantia;
-
-
-	@Column(name = "antiguedad")
-	private Integer antiguedad;
-	
-	@Column(name = "ubicacionIdubicacion")
-	private String ubicacionidubicacion;
 	
 	@Column(name = "fechaActualizacion")
 	private String fechaactualizacion;
@@ -93,13 +77,7 @@ public class Equipo implements Serializable{
 		this.nombrehost = nombrehost;
 	}
 
-	public String getRamidram() {
-		return ramidram;
-	}
-
-	public void setRamidram(String ramidram) {
-		this.ramidram = ramidram;
-	}
+	
 
 	public String getSerie() {
 		return serie;
@@ -109,46 +87,6 @@ public class Equipo implements Serializable{
 		this.serie = serie;
 	}
 
-	public Integer getEstadoidestado() {
-		return estadoidestado;
-	}
-
-	public void setEstadoidestado(Integer estadoidestado) {	
-		this.estadoidestado = estadoidestado;
-	}
-
-	public String getIniciogarantia() {
-		return iniciogarantia;
-	}
-
-	public void setIniciogarantia(String iniciogarantia) {
-		this.iniciogarantia = iniciogarantia;
-	}
-	
-
-	public String getFingarantia() {
-		return fingarantia;
-	}
-
-	public void setFingarantia(String fingarantia) {
-		this.fingarantia = fingarantia;
-	}
-
-	public Integer getAntiguedad() {
-		return antiguedad;
-	}
-
-	public void setAntiguedad(Integer antiguedad) {
-		this.antiguedad = antiguedad;
-	}
-
-	public String getUbicacionidubicacion() {
-		return ubicacionidubicacion;
-	}
-
-	public void setUbicacionidubicacion(String ubicacionidubicacion) {
-		this.ubicacionidubicacion = ubicacionidubicacion;
-	}
 
 	public String getFechaactualizacion() {
 		return fechaactualizacion;

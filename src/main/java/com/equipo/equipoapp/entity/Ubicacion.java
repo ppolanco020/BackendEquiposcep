@@ -36,9 +36,9 @@ public class Ubicacion implements Serializable{
 
 	@Id
 	@Column(name = "idubicacion")
-//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional=false)
-	private String idubicacion;
+	private Integer idubicacion;
 	
 
 	@Column(name = "ubicacion")
@@ -51,12 +51,12 @@ public class Ubicacion implements Serializable{
 			
 
 
-	public String getIdubicacion() {
+	public Integer getIdubicacion() {
 		return idubicacion;
 	}
 
 
-	public void setIdubicacion(String idubicacion) {
+	public void setIdubicacion(Integer idubicacion) {
 		this.idubicacion = idubicacion;
 	}
 
