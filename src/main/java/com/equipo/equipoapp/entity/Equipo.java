@@ -2,7 +2,7 @@
 import java.io.Serializable;
 import java.util.List;
 
-import com.equipo.equipoapp.entity.marcaModelo;
+import com.equipo.equipoapp.entity.equipoDetalle;
 
 import jakarta.persistence.Basic;
 import jakarta.persistence.CascadeType;
@@ -51,13 +51,20 @@ public class Equipo implements Serializable{
 	@OneToMany(cascade = CascadeType.ALL,
 			fetch = FetchType.LAZY,
 			mappedBy = "equiposicoin")
-			private List<marcaModelo> marcamodelo;
+			private List<equipoDetalle> equipodetalle;
 			
 	@OneToMany(cascade = CascadeType.ALL,
 			fetch = FetchType.LAZY,
 			mappedBy = "equiposicoin")
 
 			private List<equipoProcesador> equipoprocesador;
+			
+	@OneToMany(cascade = CascadeType.ALL,
+			fetch = FetchType.LAZY,
+			mappedBy = "equiposicoin")
+
+			private List<equipoProcesador> equipoprocesador;
+			
 			
 			
 	
@@ -96,12 +103,12 @@ public class Equipo implements Serializable{
 		this.fechaactualizacion = fechaactualizacion;
 	}
 
-	public List<marcaModelo> getMarcamodelo() {
-		return marcamodelo;
+	public List<equipoDetalle> getMarcamodelo() {
+		return equipodetalle;
 	}
 
-	public void setMarcamodelo(List<marcaModelo> marcamodelo) {
-		this.marcamodelo = marcamodelo;
+	public void setMarcamodelo(List<equipoDetalle> marcamodelo) {
+		this.equipodetalle = marcamodelo;
 	}
 
 	public List<equipoProcesador> getEquipoprocesador() {

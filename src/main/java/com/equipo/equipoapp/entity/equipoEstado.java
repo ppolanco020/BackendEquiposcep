@@ -14,7 +14,7 @@ import jakarta.persistence.Table;
 @Table(name="marca_modelo")
 
 
-public class marcaModelo implements Serializable{
+public class equipoEstado implements Serializable{
 
 	/**
 	 * 
@@ -29,7 +29,7 @@ public class marcaModelo implements Serializable{
 
 
 	@Id
-	@Column(name = "idmarcaModelo")
+	@Column(name = "idequipodetalle")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional=false)
 	private Integer idmarcamodelo;
