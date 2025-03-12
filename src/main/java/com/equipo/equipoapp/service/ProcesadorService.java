@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.equipo.equipoapp.entity.Procesador;
+import com.equipo.equipoapp.entity.almacenamientoCapacidad;
 
 import com.equipo.equipoapp.repository.ProcesadorRepository;
 
@@ -32,14 +32,14 @@ public class ProcesadorService {
 	
 	
 	@GetMapping(path ="/buscar")
-	public List<Procesador> buscar(){
+	public List<almacenamientoCapacidad> buscar(){
 	  return preocesadorrepository.findAll();
 	}
 	
 	
 	
 	@GetMapping(path ="/buscar/{sicoin}")
-	public List<Procesador> buscarPorSicoin(@PathVariable String procesador){
+	public List<almacenamientoCapacidad> buscarPorSicoin(@PathVariable String procesador){
 		return preocesadorrepository.findByProcesador("%%"+procesador+"%%");
 	}
 	
@@ -48,7 +48,7 @@ public class ProcesadorService {
 	
 
 	@PostMapping(path="/guardar")
-	public Procesador guardarEquipo(@RequestBody Procesador procesador) {
+	public almacenamientoCapacidad guardarEquipo(@RequestBody almacenamientoCapacidad procesador) {
 		return preocesadorrepository.save(procesador);
 	}
 	

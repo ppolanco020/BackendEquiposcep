@@ -51,13 +51,13 @@ public class Equipo implements Serializable{
 	@OneToMany(cascade = CascadeType.ALL,
 			fetch = FetchType.LAZY,
 			mappedBy = "equiposicoin")
-			private List<marcaModelo> marcamodelo;
+			private List<equipoDetalle> marcamodelo;
 			
 	@OneToMany(cascade = CascadeType.ALL,
 			fetch = FetchType.LAZY,
 			mappedBy = "equiposicoin")
 
-			private List<equipoProcesador> equipoprocesador;
+			private List<equipoDetalle> equipoprocesador;
 			
 			
 	
@@ -104,11 +104,11 @@ public class Equipo implements Serializable{
 		this.marcamodelo = marcamodelo;
 	}
 
-	public List<equipoProcesador> getEquipoprocesador() {
+	public List<equipoDetalle> getEquipoprocesador() {
 		return equipoprocesador;
 	}
 
-	public void setEquipoprocesador(List<equipoProcesador> equipoprocesador) {
+	public void setEquipoprocesador(List<equipoDetalle> equipoprocesador) {
 		this.equipoprocesador = equipoprocesador;
 	}
 

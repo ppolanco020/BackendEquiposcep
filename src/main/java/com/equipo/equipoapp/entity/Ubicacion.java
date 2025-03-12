@@ -32,8 +32,6 @@ public class Ubicacion implements Serializable{
 	 * 
 	 */
 
-
-
 	@Id
 	@Column(name = "idubicacion")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

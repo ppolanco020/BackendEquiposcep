@@ -17,10 +17,10 @@ import jakarta.persistence.Table;
 
 
 @Entity
-@Table(name="marca")
+@Table(name="almacenamiento_capacidad")
 
 
-public class Marca implements Serializable{
+public class almacenamientoCapacidad implements Serializable{
 
 	/**
 	 * 
@@ -31,55 +31,38 @@ public class Marca implements Serializable{
 	/**
 	 * 
 	 */
-
+	
 	@Id
-	@Column(name = "idmarca")
+	@Column(name = "idalmacenamientoCapacidad")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional=false)
-	private Integer idmarca;
+	private Integer idalmacenamientocapacidad;
 	
 	
-	@Column(name = "marca")
-	private String marca;
-	
-	@Column(name = "tipo")
-	private String tipo;
-	
+	@Column(name = "capacidad")
+	private String capacidad;
 
-	public Integer getIdmarca() {
-		return idmarca;
+
+	public Integer getIdalmacenamientocapacidad() {
+		return idalmacenamientocapacidad;
 	}
 
 
-
-
-	public void setIdmarca(Integer idmarca) {
-		this.idmarca = idmarca;
+	public void setIdalmacenamientocapacidad(Integer idalmacenamientocapacidad) {
+		this.idalmacenamientocapacidad = idalmacenamientocapacidad;
 	}
 
 
-
-
-	public String getMarca() {
-		return marca;
+	public String getCapacidad() {
+		return capacidad;
 	}
 
 
-
-
-	public void setMarca(String marca) {
-		this.marca = marca;
+	public void setCapacidad(String capacidad) {
+		this.capacidad = capacidad;
 	}
-
-
-
-
-
-
-
-	
-
-
 	
 	
+
+
 }

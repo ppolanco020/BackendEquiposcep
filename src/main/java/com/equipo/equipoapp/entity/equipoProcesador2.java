@@ -21,7 +21,7 @@ import jakarta.persistence.Table;
 @Table(name="equipo_procesador")
 
 
-public class equipoProcesador implements Serializable{
+public class equipoProcesador2 implements Serializable{
 
 	/**
 	 * 
@@ -41,11 +41,11 @@ public class equipoProcesador implements Serializable{
 	@Column(name = "equipoSicoin")
 	private String equiposicoin;
 
-	@Column(name = "velocidad")
-	private String velocidad;
-
 	@Column(name = "generacion")
 	private String generacion;
+	
+	@Column(name = "velocidad")
+	private String velocidad;
 
 
 	@Column(name = "procesadorIdprocesador")
