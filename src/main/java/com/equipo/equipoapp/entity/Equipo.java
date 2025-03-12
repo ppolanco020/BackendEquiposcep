@@ -53,11 +53,6 @@ public class Equipo implements Serializable{
 			mappedBy = "equiposicoin")
 			private List<equipoDetalle> equipodetalle;
 			
-	@OneToMany(cascade = CascadeType.ALL,
-			fetch = FetchType.LAZY,
-			mappedBy = "equiposicoin")
-
-			private List<equipoProcesador> equipoprocesador;
 			
 	@OneToMany(cascade = CascadeType.ALL,
 			fetch = FetchType.LAZY,
@@ -65,6 +60,13 @@ public class Equipo implements Serializable{
 
 			private List<equipoProcesador> equipoprocesador;
 			
+			
+	@OneToMany(cascade = CascadeType.ALL,
+			fetch = FetchType.LAZY,
+			mappedBy = "equiposicoin")
+
+			private List<equipoGarantia> equipoubicacion;
+	
 			
 			
 	

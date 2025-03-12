@@ -39,48 +39,54 @@ public class equipoAlmacenamiento implements Serializable{
 	@Column(name = "capacidadIdcapacidad")
 	private String capacidadidcapacidad;
 
-	
-	@Column(name = "ubicacionIdubicacion")
-	private String ubicacionidubicacion;
+
 	
 	@Column(name = "almacenamientoTipoIdalmacenamiento")
 	private String almacenamientotipoidalmacenamiento;
+
+
 
 	public Integer getIdequipoalmacenamiento() {
 		return idequipoalmacenamiento;
 	}
 
+
+
 	public void setIdequipoalmacenamiento(Integer idequipoalmacenamiento) {
 		this.idequipoalmacenamiento = idequipoalmacenamiento;
 	}
+
+
 
 	public String getEquiposicoin() {
 		return equiposicoin;
 	}
 
+
+
 	public void setEquiposicoin(String equiposicoin) {
 		this.equiposicoin = equiposicoin;
 	}
+
+
 
 	public String getCapacidadidcapacidad() {
 		return capacidadidcapacidad;
 	}
 
+
+
 	public void setCapacidadidcapacidad(String capacidadidcapacidad) {
 		this.capacidadidcapacidad = capacidadidcapacidad;
 	}
 
-	public String getUbicacionidubicacion() {
-		return ubicacionidubicacion;
-	}
 
-	public void setUbicacionidubicacion(String ubicacionidubicacion) {
-		this.ubicacionidubicacion = ubicacionidubicacion;
-	}
 
 	public String getAlmacenamientotipoidalmacenamiento() {
 		return almacenamientotipoidalmacenamiento;
 	}
+
+
 
 	public void setAlmacenamientotipoidalmacenamiento(String almacenamientotipoidalmacenamiento) {
 		this.almacenamientotipoidalmacenamiento = almacenamientotipoidalmacenamiento;

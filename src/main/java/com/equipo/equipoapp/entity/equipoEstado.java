@@ -29,67 +29,72 @@ public class equipoEstado implements Serializable{
 
 
 	@Id
-	@Column(name = "idequipodetalle")
+	@Column(name = "idequipoEstado")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional=false)
-	private Integer idmarcamodelo;
+	private Integer idequipoestado;
 	
+	@Column(name = "estadoEquipo")
+	private String estadoequipo;
+	
+	@Column(name = "antiguedad")
+	private Integer antiguedad;
 
 	@Column(name = "equipoSicoin")
 	private String equiposicoin;
 
-	@Column(name = "marcaIdmarca")
-	private Integer marcaidmarca;
+	@Column(name = "estadoIdestado")
+	private Integer estadoidestado;
 
-	@Column(name = "modeloIdmodelo")
-	private Integer modeloidmodelo;
+	@Column(name = "equipoEstadoActivo")
+	private Integer equipoestadoactivo;
 
-
-
-	public Integer getIdmarcamodelo() {
-		return idmarcamodelo;
+	public Integer getIdequipoestado() {
+		return idequipoestado;
 	}
 
-
-
-	public void setIdmarcamodelo(Integer idmarcamodelo) {
-		this.idmarcamodelo = idmarcamodelo;
+	public void setIdequipoestado(Integer idequipoestado) {
+		this.idequipoestado = idequipoestado;
 	}
 
+	public String getEstadoequipo() {
+		return estadoequipo;
+	}
 
+	public void setEstadoequipo(String estadoequipo) {
+		this.estadoequipo = estadoequipo;
+	}
+
+	public Integer getAntiguedad() {
+		return antiguedad;
+	}
+
+	public void setAntiguedad(Integer antiguedad) {
+		this.antiguedad = antiguedad;
+	}
 
 	public String getEquiposicoin() {
 		return equiposicoin;
 	}
 
-
-
 	public void setEquiposicoin(String equiposicoin) {
 		this.equiposicoin = equiposicoin;
 	}
 
-
-
-	public Integer getMarcaidmarca() {
-		return marcaidmarca;
+	public Integer getEstadoidestado() {
+		return estadoidestado;
 	}
 
-
-
-	public void setMarcaidmarca(Integer marcaidmarca) {
-		this.marcaidmarca = marcaidmarca;
+	public void setEstadoidestado(Integer estadoidestado) {
+		this.estadoidestado = estadoidestado;
 	}
 
-
-
-	public Integer getModeloidmodelo() {
-		return modeloidmodelo;
+	public Integer getEquipoestadoactivo() {
+		return equipoestadoactivo;
 	}
 
-
-
-	public void setModeloidmodelo(Integer modeloidmodelo) {
-		this.modeloidmodelo = modeloidmodelo;
+	public void setEquipoestadoactivo(Integer equipoestadoactivo) {
+		this.equipoestadoactivo = equipoestadoactivo;
 	}
 
 	
