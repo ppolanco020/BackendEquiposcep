@@ -38,14 +38,14 @@ public class equipoAsignacion implements Serializable{
 	private Integer idequipoasignacion;
 	
 
+	@Column(name = "fechaAsignacion")
+	private Date fechaasignacion;
+	
 	@Column(name = "equipoSicoin")
 	private String equiposicoin;
 
 	@Column(name = "usuarioEmail")
 	private String usuarioemail;
-
-	@Column(name = "fechaAsignacion")
-	private Date fechaasignacion;
 
 	public Integer getIdequipoasignacion() {
 		return idequipoasignacion;
@@ -53,6 +53,14 @@ public class equipoAsignacion implements Serializable{
 
 	public void setIdequipoasignacion(Integer idequipoasignacion) {
 		this.idequipoasignacion = idequipoasignacion;
+	}
+
+	public Date getFechaasignacion() {
+		return fechaasignacion;
+	}
+
+	public void setFechaasignacion(Date fechaasignacion) {
+		this.fechaasignacion = fechaasignacion;
 	}
 
 	public String getEquiposicoin() {
@@ -71,14 +79,6 @@ public class equipoAsignacion implements Serializable{
 		this.usuarioemail = usuarioemail;
 	}
 
-	public Date getFechaasignacion() {
-		return fechaasignacion;
-	}
 
-	public void setFechaasignacion(Date fechaasignacion) {
-		this.fechaasignacion = fechaasignacion;
-	}
-
-	
 	
 }

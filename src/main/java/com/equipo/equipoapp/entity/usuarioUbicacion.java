@@ -26,34 +26,32 @@ public class usuarioUbicacion implements Serializable{
 	 * 
 	 */
 
-
-
 	@Id
 	@Column(name = "idusuarioUbicacion")
-//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional=false)
-	private String idusuarioubicacion;
+	private Integer idusuarioubicacion;
 	
 
 	@Column(name = "ubicacionIdubicacion")
-	private String ubicacionidubicacion;
+	private Integer ubicacionidubicacion;
 
 	@Column(name = "usuarioEmail")
 	private String usuarioemail;
 
-	public String getIdusuarioubicacion() {
+	public Integer getIdusuarioubicacion() {
 		return idusuarioubicacion;
 	}
 
-	public void setIdusuarioubicacion(String idusuarioubicacion) {
+	public void setIdusuarioubicacion(Integer idusuarioubicacion) {
 		this.idusuarioubicacion = idusuarioubicacion;
 	}
 
-	public String getUbicacionidubicacion() {
+	public Integer getUbicacionidubicacion() {
 		return ubicacionidubicacion;
 	}
 
-	public void setUbicacionidubicacion(String ubicacionidubicacion) {
+	public void setUbicacionidubicacion(Integer ubicacionidubicacion) {
 		this.ubicacionidubicacion = ubicacionidubicacion;
 	}
 

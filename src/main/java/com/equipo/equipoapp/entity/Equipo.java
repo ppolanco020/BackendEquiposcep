@@ -51,7 +51,66 @@ public class Equipo implements Serializable{
 	@OneToMany(cascade = CascadeType.ALL,
 			fetch = FetchType.LAZY,
 			mappedBy = "equiposicoin")
+
+			private List<equipoAlmacenamiento> equipoalmacenamiento;
+
+
+	public String getSicoin() {
+		return sicoin;
+	}
+
+
+	public void setSicoin(String sicoin) {
+		this.sicoin = sicoin;
+	}
+
+
+	public String getNombrehost() {
+		return nombrehost;
+	}
+
+
+	public void setNombrehost(String nombrehost) {
+		this.nombrehost = nombrehost;
+	}
+
+
+	public String getSerie() {
+		return serie;
+	}
+
+
+	public void setSerie(String serie) {
+		this.serie = serie;
+	}
+
+
+	public String getFechaactualizacion() {
+		return fechaactualizacion;
+	}
+
+
+	public void setFechaactualizacion(String fechaactualizacion) {
+		this.fechaactualizacion = fechaactualizacion;
+	}
+
+
+	public List<equipoAlmacenamiento> getEquipoalmacenamiento() {
+		return equipoalmacenamiento;
+	}
+
+
+	public void setEquipoalmacenamiento(List<equipoAlmacenamiento> equipoalmacenamiento) {
+		this.equipoalmacenamiento = equipoalmacenamiento;
+	}
+	
+	/*
+	@OneToMany(cascade = CascadeType.ALL,
+			fetch = FetchType.LAZY,
+			mappedBy = "equiposicoin")
 			private List<equipoDetalle> equipodetalle;
+			
+			
 			
 			
 	@OneToMany(cascade = CascadeType.ALL,
@@ -65,63 +124,30 @@ public class Equipo implements Serializable{
 			fetch = FetchType.LAZY,
 			mappedBy = "equiposicoin")
 
-			private List<equipoGarantia> equipoubicacion;
+			private List<equipoUbicacion> equipoubicacion;
+			
+	@OneToMany(cascade = CascadeType.ALL,
+			fetch = FetchType.LAZY,
+			mappedBy = "equiposicoin")
+
+			private List<equipoEstado> equipoestado;
+			
+	@OneToMany(cascade = CascadeType.ALL,
+			fetch = FetchType.LAZY,
+			mappedBy = "equiposicoin")
+
+			private List<equipoGarantia> equipogarantia;
 	
+
+	
+	@OneToMany(cascade = CascadeType.ALL,
+			fetch = FetchType.LAZY,
+			mappedBy = "equiposicoin")
+
+			private List<equipoRam> equiporam;
+			*/
+
 			
 			
-	
-	public String getSicoin() {
-		return sicoin;
-	}
-
-	public void setSicoin(String sicoin) {
-		this.sicoin = sicoin;
-	}
-
-	public String getNombrehost() {
-		return nombrehost;
-	}
-
-	public void setNombrehost(String nombrehost) {
-		this.nombrehost = nombrehost;
-	}
-
-	
-
-	public String getSerie() {
-		return serie;
-	}
-
-	public void setSerie(String serie) {
-		this.serie = serie;
-	}
-
-
-	public String getFechaactualizacion() {
-		return fechaactualizacion;
-	}
-
-	public void setFechaactualizacion(String fechaactualizacion) {
-		this.fechaactualizacion = fechaactualizacion;
-	}
-
-	public List<equipoDetalle> getMarcamodelo() {
-		return equipodetalle;
-	}
-
-	public void setMarcamodelo(List<equipoDetalle> marcamodelo) {
-		this.equipodetalle = marcamodelo;
-	}
-
-	public List<equipoProcesador> getEquipoprocesador() {
-		return equipoprocesador;
-	}
-
-	public void setEquipoprocesador(List<equipoProcesador> equipoprocesador) {
-		this.equipoprocesador = equipoprocesador;
-	}
-
-
-	
 	
 }

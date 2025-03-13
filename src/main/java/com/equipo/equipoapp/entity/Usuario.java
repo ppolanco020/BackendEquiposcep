@@ -49,13 +49,10 @@ public class Usuario implements Serializable{
 	private String password;
 	
 
-	@Column(name = "ubicacion_idubicacion")
-	private String ubicacionidubicacion;
-	
-	
+	@Column(name = "ubicacionIdubicacion")
+	private Integer ubicacionidubicacion;
 
 
-	
 	public String getEmail() {
 		return email;
 	}
@@ -85,9 +82,6 @@ public class Usuario implements Serializable{
 		this.apellido = apellido;
 	}
 
-	
-	
-	
 
 	public String getPassword() {
 		return password;
@@ -99,17 +93,17 @@ public class Usuario implements Serializable{
 	}
 
 
-	public String getUbicacionidubicacion() {
+	public Integer getUbicacionidubicacion() {
 		return ubicacionidubicacion;
 	}
 
 
-	public void setUbicacionidubicacion(String ubicacionidubicacion) {
+	public void setUbicacionidubicacion(Integer ubicacionidubicacion) {
 		this.ubicacionidubicacion = ubicacionidubicacion;
 	}
-
-
-
 	
+
+
+
 	
 }
