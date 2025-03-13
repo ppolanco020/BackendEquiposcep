@@ -9,7 +9,7 @@ import com.equipo.equipoapp.entity.usuarioUbicacion;
 
 @Repository("usuarioUbicacionRepository")
 
-public interface usuarioUbicacionRepository extends  JpaRepository<usuarioUbicacion, String>  {
+public interface usuarioUbicacionRepository extends  JpaRepository<usuarioUbicacion, Integer>  {
 
 
 	

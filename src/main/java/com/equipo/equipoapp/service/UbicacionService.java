@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.equipo.equipoapp.entity.Marca;
 import com.equipo.equipoapp.entity.Ubicacion;
 import com.equipo.equipoapp.repository.UbicacionRepository;
 
@@ -36,6 +37,7 @@ public class UbicacionService {
 	}
 	
 	
+
 	
 
 	@PostMapping(path="/guardar")

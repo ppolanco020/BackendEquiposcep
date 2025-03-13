@@ -13,6 +13,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository("ubicacionRepository")
 
-public interface UbicacionRepository extends  JpaRepository<Ubicacion, String>  {
+public interface UbicacionRepository extends  JpaRepository<Ubicacion, Integer>  {
 		public List<Ubicacion>findByUbicacion(String ubicacion);
 }
