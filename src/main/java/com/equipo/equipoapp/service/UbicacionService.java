@@ -36,7 +36,6 @@ public class UbicacionService {
 	  return ubicacionrepository.findAll();
 	}
 	
-	
 
 	
 
