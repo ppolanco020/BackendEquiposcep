@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.equipo.equipoapp.entity.Modelo;
 import com.equipo.equipoapp.entity.Usuario;
 import com.equipo.equipoapp.repository.UsuarioRepository;
 
@@ -37,11 +38,21 @@ public class UsuarioService {
 	
 	
 	
-	@GetMapping(path ="/buscar/{correo}")
-	public List<Usuario> buscarPorCorreo(@PathVariable String email){
-		return usuariorepository.findByEmail("%%"+email+"%%");
+	@GetMapping(path ="/buscar/{email}")
+	public List<Usuario> findByemail(@PathVariable String email){
+		return usuariorepository.findByemail(email);
 	}
 	
+	
+	@GetMapping(path ="/buscar/correo/{email}")
+	public List<Usuario> findByemailLike(@PathVariable String email){
+		return usuariorepository.findByemailLike(email+"%%");
+	}
+
+
+	
+	
+
 	
 	
 	

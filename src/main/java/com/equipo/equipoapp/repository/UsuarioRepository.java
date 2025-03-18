@@ -13,9 +13,10 @@ import org.springframework.stereotype.Repository;
 
 @Repository("usuarioRepository")
 
-public interface UsuarioRepository extends  JpaRepository<Usuario, String>  {
+public interface UsuarioRepository extends  JpaRepository<Usuario, Integer>  {
 	public List<Usuario>findByEmailAndPassword(String email,String password);
-	public List<Usuario>findByEmailLike(String email);
+	public List<Usuario>findByemail(String email);
+	public List<Usuario>findByemailLike(String email);
 	public List<Usuario>findByNombreOrApellido(String nombre, String apellido);
 	public List<Usuario>deleteByEmail(String email);
 	public List<Usuario>findByEmail(String usuario);
