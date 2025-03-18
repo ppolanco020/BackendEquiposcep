@@ -49,12 +49,6 @@ public class UsuarioService {
 		return usuariorepository.findByemailLike(email+"%%");
 	}
 
-
-	
-	
-
-	
-	
 	
 
 	@PostMapping(path="/guardar")
