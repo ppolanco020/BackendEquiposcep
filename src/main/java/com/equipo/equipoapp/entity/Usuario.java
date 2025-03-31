@@ -49,6 +49,11 @@ public class Usuario implements Serializable{
 	@Column(name = "apellido")
 	private String apellido;
 	
+	@Column(name = "puestoIdpuesto")
+	private Integer puestoidpuesto;
+	
+	
+	
 	@Column(name = "password")
 	private String password;
 	
@@ -94,6 +99,17 @@ public class Usuario implements Serializable{
 
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
+	}
+	
+	
+
+	public Integer getPuestoidpuesto() {
+		return puestoidpuesto;
+	}
+
+
+	public void setPuestoidpuesto(Integer puestoidpuesto) {
+		this.puestoidpuesto = puestoidpuesto;
 	}
 
 
