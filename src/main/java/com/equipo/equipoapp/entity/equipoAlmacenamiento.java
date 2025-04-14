@@ -41,8 +41,8 @@ public class equipoAlmacenamiento implements Serializable{
 
 
 	
-	@Column(name = "almacenamientoTipoIdalmacenamiento")
-	private String almacenamientotipoidalmacenamiento;
+	@Column(name = "almacenamientoTipoIdalmacenamientoTipo")
+	private String almacenamientotipoidalmacenamientotipo;
 
 
 
@@ -82,14 +82,14 @@ public class equipoAlmacenamiento implements Serializable{
 
 
 
-	public String getAlmacenamientotipoidalmacenamiento() {
-		return almacenamientotipoidalmacenamiento;
+	public String getAlmacenamientotipoidalmacenamientotipo() {
+		return almacenamientotipoidalmacenamientotipo;
 	}
 
 
 
-	public void setAlmacenamientotipoidalmacenamiento(String almacenamientotipoidalmacenamiento) {
-		this.almacenamientotipoidalmacenamiento = almacenamientotipoidalmacenamiento;
+	public void setAlmacenamientotipoidalmacenamiento(String almacenamientotipoidalmacenamientotipo) {
+		this.almacenamientotipoidalmacenamientotipo = almacenamientotipoidalmacenamientotipo;
 	}
 
 	

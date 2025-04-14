@@ -27,7 +27,7 @@ import com.equipo.equipoapp.repository.MarcaRepository;
 
 public class MarcaService {
 
-	@Autowired
+	@Autowired	
 	MarcaRepository marcarepository;
 	
 	
