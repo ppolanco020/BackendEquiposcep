@@ -58,8 +58,14 @@ public class Usuario implements Serializable{
 	private String password;
 	
 
-	@Column(name = "ubicacionIdubicacion")
-	private Integer ubicacionidubicacion;
+
+	
+	
+	@OneToMany(cascade = CascadeType.ALL,
+			fetch = FetchType.LAZY,
+			mappedBy = "usuarioidusuario")
+
+			private List<usuarioUbicacion> usuarioubicacion;
 
 
 	public Integer getIdusuario() {
@@ -123,13 +129,14 @@ public class Usuario implements Serializable{
 	}
 
 
-	public Integer getUbicacionidubicacion() {
-		return ubicacionidubicacion;
+
+	public List<usuarioUbicacion> getUsuarioubicacion() {
+		return usuarioubicacion;
 	}
 
 
-	public void setUbicacionidubicacion(Integer ubicacionidubicacion) {
-		this.ubicacionidubicacion = ubicacionidubicacion;
+	public void setUsuarioubicacion(List<usuarioUbicacion> usuarioubicacion) {
+		this.usuarioubicacion = usuarioubicacion;
 	}
 
 

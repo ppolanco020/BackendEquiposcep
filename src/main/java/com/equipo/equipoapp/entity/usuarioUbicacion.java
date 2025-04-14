@@ -1,12 +1,16 @@
 package com.equipo.equipoapp.entity;
 import java.io.Serializable;
+import java.util.List;
 
 import jakarta.persistence.Basic;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 
@@ -36,8 +40,8 @@ public class usuarioUbicacion implements Serializable{
 	@Column(name = "ubicacionIdubicacion")
 	private Integer ubicacionidubicacion;
 
-	@Column(name = "usuarioEmail")
-	private String usuarioemail;
+	@Column(name = "usuarioIdusuario")
+	private Integer usuarioidusuario;
 
 	public Integer getIdusuarioubicacion() {
 		return idusuarioubicacion;
@@ -55,16 +59,15 @@ public class usuarioUbicacion implements Serializable{
 		this.ubicacionidubicacion = ubicacionidubicacion;
 	}
 
-	public String getUsuarioemail() {
-		return usuarioemail;
+	public Integer getUsuarioidusuario() {
+		return usuarioidusuario;
 	}
 
-	public void setUsuarioemail(String usuarioemail) {
-		this.usuarioemail = usuarioemail;
+	public void setUsuarioidusuario(Integer usuarioidusuario) {
+		this.usuarioidusuario = usuarioidusuario;
 	}
-
 	
-
+	
 
 
 	
