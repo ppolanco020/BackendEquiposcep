@@ -69,7 +69,7 @@ public class UsuarioService {
 	}
 	
 	@DeleteMapping(path ="/eliminar/{idusuario}")
-	public void deleteByidusuario(@PathVariable int idusuario) {
+	public void eliminar (@PathVariable int idusuario) {
 		usuariorepository.deleteById(idusuario);	
 	
 				}
