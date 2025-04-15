@@ -1,3 +1,4 @@
+package com.equipo.equipoapp.entity;
 import java.io.Serializable;
 import java.util.List;
 
