@@ -52,94 +52,70 @@ public class Usuario implements Serializable{
 	@Column(name = "puestoIdpuesto")
 	private Integer puestoidpuesto;
 	
-	
-	
 	@Column(name = "password")
 	private String password;
 	
-
-
-	
-	
-	@OneToMany(cascade = CascadeType.ALL,
-			fetch = FetchType.LAZY,
-			mappedBy = "usuarioidusuario")
-
-			private List<usuarioUbicacion> usuarioubicacion;
-
+	@Column(name = "ubicacionIdubicacion")
+	private Integer ubicacionidubicacion;
 
 	public Integer getIdusuario() {
 		return idusuario;
 	}
 
-
 	public void setIdusuario(Integer idusuario) {
 		this.idusuario = idusuario;
 	}
-
 
 	public String getEmail() {
 		return email;
 	}
 
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
 
 	public String getNombre() {
 		return nombre;
 	}
 
-
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
 
 	public String getApellido() {
 		return apellido;
 	}
 
-
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
-	
-	
 
 	public Integer getPuestoidpuesto() {
 		return puestoidpuesto;
 	}
 
-
 	public void setPuestoidpuesto(Integer puestoidpuesto) {
 		this.puestoidpuesto = puestoidpuesto;
 	}
-
 
 	public String getPassword() {
 		return password;
 	}
 
-
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
-
-
-	public List<usuarioUbicacion> getUsuarioubicacion() {
-		return usuarioubicacion;
+	public Integer getUbicacionidubicacion() {
+		return ubicacionidubicacion;
 	}
 
-
-	public void setUsuarioubicacion(List<usuarioUbicacion> usuarioubicacion) {
-		this.usuarioubicacion = usuarioubicacion;
+	public void setUbicacionidubicacion(Integer ubicacionidubicacion) {
+		this.ubicacionidubicacion = ubicacionidubicacion;
 	}
-
-
 
 	
+	
+	
 }
+
