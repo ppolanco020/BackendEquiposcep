@@ -57,6 +57,9 @@ public class Usuario implements Serializable{
 	
 	@Column(name = "ubicacionIdubicacion")
 	private Integer ubicacionidubicacion;
+	
+	@Column(name = "usuarioActivo")
+	private Integer usuarioactivo;
 
 	public Integer getIdusuario() {
 		return idusuario;
@@ -113,6 +116,16 @@ public class Usuario implements Serializable{
 	public void setUbicacionidubicacion(Integer ubicacionidubicacion) {
 		this.ubicacionidubicacion = ubicacionidubicacion;
 	}
+
+	public Integer getUsuarioactivo() {
+		return usuarioactivo;
+	}
+
+	public void setUsuarioactivo(Integer usuarioactivo) {
+		this.usuarioactivo = usuarioactivo;
+	}
+
+	
 
 	
 	

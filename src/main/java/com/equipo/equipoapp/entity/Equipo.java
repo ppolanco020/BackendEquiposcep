@@ -46,6 +46,12 @@ public class Equipo implements Serializable{
 	
 	@Column(name = "fechaActualizacion")
 	private String fechaactualizacion;
+	
+	@Column(name = "equipoEstado")
+	private Integer equipoestado;
+	
+	@Column(name = "equipoActivo")
+	private Integer equipoactivo;
 
 
 	@OneToMany(cascade = CascadeType.ALL,
@@ -103,6 +109,33 @@ public class Equipo implements Serializable{
 	public void setEquipoalmacenamiento(List<equipoAlmacenamiento> equipoalmacenamiento) {
 		this.equipoalmacenamiento = equipoalmacenamiento;
 	}
+
+
+	public Integer getEquipoestado() {
+		return equipoestado;
+	}
+
+
+	public void setEquipoestado(Integer equipoestado) {
+		this.equipoestado = equipoestado;
+	}
+
+
+	public Integer getEquipoactivo() {
+		return equipoactivo;
+	}
+
+
+	public void setEquipoactivo(Integer equipoactivo) {
+		this.equipoactivo = equipoactivo;
+	}
+
+
+	
+	
+	
+	
+	
 	
 	/*
 	@OneToMany(cascade = CascadeType.ALL,
