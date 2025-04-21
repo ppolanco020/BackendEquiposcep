@@ -46,9 +46,6 @@ public class Usuario implements Serializable{
 	private String nombre;
 
 
-	@Column(name = "apellido")
-	private String apellido;
-	
 	@Column(name = "puestoIdpuesto")
 	private Integer puestoidpuesto;
 	
@@ -65,10 +62,6 @@ public class Usuario implements Serializable{
 		return idusuario;
 	}
 
-	public void setIdusuario(Integer idusuario) {
-		this.idusuario = idusuario;
-	}
-
 	public String getEmail() {
 		return email;
 	}
@@ -83,14 +76,6 @@ public class Usuario implements Serializable{
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-	}
-
-	public String getApellido() {
-		return apellido;
-	}
-
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
 	}
 
 	public Integer getPuestoidpuesto() {
@@ -125,7 +110,11 @@ public class Usuario implements Serializable{
 		this.usuarioactivo = usuarioactivo;
 	}
 
-	
+	public void setIdusuario(Integer idusuario) {
+		this.idusuario = idusuario;
+	}
+
+
 
 	
 	
