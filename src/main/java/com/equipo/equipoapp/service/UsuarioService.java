@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.equipo.equipoapp.entity.Modelo;
+
 import com.equipo.equipoapp.entity.Usuario;
 import com.equipo.equipoapp.repository.UsuarioRepository;
 
@@ -68,11 +68,11 @@ public class UsuarioService {
 		return login;
 	}
 	
-	@DeleteMapping(path ="/eliminar/{idusuario}")
+/*	@DeleteMapping(path ="/eliminar/{idusuario}")
 	public void eliminar (@PathVariable int idusuario) {
 		usuariorepository.deleteById(idusuario);	
 	
-				}
+				}*/
 	
 	
 	

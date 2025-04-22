@@ -13,12 +13,12 @@ import org.springframework.stereotype.Repository;
 
 @Repository("usuarioRepository")
 
-public interface UsuarioRepository extends  JpaRepository<Usuario, Integer>  {
+public interface UsuarioRepository extends  JpaRepository<Usuario, String>  {
 	public List<Usuario>findByEmailAndPassword(String email,String password);
 	public List<Usuario>findByemail(String email);
 	public List<Usuario>findByemailLike(String email);
 	public List<Usuario>findByNombre(String nombre);
 	public List<Usuario>deleteByEmail(String email);
-	public List<Usuario>deleteByidusuario(Integer idusuario);
+//	public List<Usuario>deleteByidusuario(Integer idusuario);
 	public List<Usuario>findByEmail(String usuario);
 }

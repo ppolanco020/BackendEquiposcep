@@ -38,7 +38,7 @@ public class equipoAsignacionService {
 	
 	
 	
-	@GetMapping(path ="/buscar/{sicoin}")
+	@GetMapping(path ="/buscar/{usuarioidusuario}")
 	public List<equipoAsignacion> buscarPorSicoin(@PathVariable String sicoin){
 		return equipoasignacionrepository.findByequiposicoin("%%"+sicoin+"%%");
 	}

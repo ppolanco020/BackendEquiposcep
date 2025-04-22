@@ -14,6 +14,7 @@ import org.springframework.stereotype.Repository;
 
 public interface equipoAsignacionRepository extends  JpaRepository<equipoAsignacion, Integer>  {
 	public List<equipoAsignacion>findByequiposicoin(String sicoin);
-
+	//public List<equipoAsignacion>findByemail(String email);
+	
 	
 }

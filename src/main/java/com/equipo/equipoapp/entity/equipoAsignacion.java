@@ -47,6 +47,7 @@ public class equipoAsignacion implements Serializable{
 	@Column(name = "usuarioEmail")
 	private String usuarioemail;
 
+
 	public Integer getIdequipoasignacion() {
 		return idequipoasignacion;
 	}
@@ -79,6 +80,7 @@ public class equipoAsignacion implements Serializable{
 		this.usuarioemail = usuarioemail;
 	}
 
+	
 
 	
 }
