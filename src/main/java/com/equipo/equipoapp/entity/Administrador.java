@@ -15,10 +15,10 @@ import jakarta.persistence.Table;
 
 
 @Entity
-@Table(name="usuario")
+@Table(name="administrador")
 
 
-public class Usuario implements Serializable{
+public class Administrador implements Serializable{
 
 	/**
 	 * 
@@ -44,60 +44,40 @@ public class Usuario implements Serializable{
 	private String nombre;
 
 
-	@Column(name = "puestoIdpuesto")
-	private Integer puestoidpuesto;
-	
-	
-	@Column(name = "ubicacionIdubicacion")
-	private Integer ubicacionidubicacion;
-	
-	@Column(name = "usuarioActivo")
-	private Integer usuarioactivo;
-
+	@Column(name = "password")
+	private String password;
 
 
 	public String getEmail() {
 		return email;
 	}
 
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 
 	public String getNombre() {
 		return nombre;
 	}
 
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-	public Integer getPuestoidpuesto() {
-		return puestoidpuesto;
+
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPuestoidpuesto(Integer puestoidpuesto) {
-		this.puestoidpuesto = puestoidpuesto;
-	}
 
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	
-
-	public Integer getUbicacionidubicacion() {
-		return ubicacionidubicacion;
-	}
-
-	public void setUbicacionidubicacion(Integer ubicacionidubicacion) {
-		this.ubicacionidubicacion = ubicacionidubicacion;
-	}
-
-	public Integer getUsuarioactivo() {
-		return usuarioactivo;
-	}
-
-	public void setUsuarioactivo(Integer usuarioactivo) {
-		this.usuarioactivo = usuarioactivo;
-	}
-
+	
 
 
 
