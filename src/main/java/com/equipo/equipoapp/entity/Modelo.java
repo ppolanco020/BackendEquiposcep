@@ -44,7 +44,10 @@ public class Modelo implements Serializable{
 
 	@Column(name = "marcaIdmarca")
 	private Integer marcaidmarca;
-
+	
+	@Column(name = "tipoequipoIdtipoequipo")
+	private Integer tipoequipoidtipoequipo;
+	
 
 	public Integer getIdmodelo() {
 		return idmodelo;
@@ -72,6 +75,16 @@ public class Modelo implements Serializable{
 
 	public void setMarcaidmarca(Integer marcaidmarca) {
 		this.marcaidmarca = marcaidmarca;
+	}
+
+
+	public Integer getTipoequipoidtipoequipo() {
+		return tipoequipoidtipoequipo;
+	}
+
+
+	public void setTipoequipoidtipoequipo(Integer tipoequipoidtipoequipo) {
+		this.tipoequipoidtipoequipo = tipoequipoidtipoequipo;
 	}
 	
 

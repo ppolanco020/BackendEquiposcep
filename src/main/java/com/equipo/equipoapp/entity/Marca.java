@@ -44,6 +44,7 @@ public class Marca implements Serializable{
 	@Column(name = "marca")
 	private String marca;
 	
+	
 
 	public Integer getIdmarca() {
 		return idmarca;
