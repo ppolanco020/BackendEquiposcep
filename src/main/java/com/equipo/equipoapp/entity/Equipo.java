@@ -47,6 +47,9 @@ public class Equipo implements Serializable{
 	@Column(name = "fechaActualizacion")
 	private String fechaactualizacion;
 	
+	@Column(name = "equipoEstado")
+	private Integer equipoestado;
+	
 
 	@Column(name = "equipoActivo")
 	private Integer equipoactivo;
@@ -132,6 +135,16 @@ public class Equipo implements Serializable{
 
 	public void setUbicacionidubicacion(Integer ubicacionidubicacion) {
 		this.ubicacionidubicacion = ubicacionidubicacion;
+	}
+
+
+	public Integer getEquipoestado() {
+		return equipoestado;
+	}
+
+
+	public void setEquipoestado(Integer equipoestado) {
+		this.equipoestado = equipoestado;
 	}
 
 

@@ -96,5 +96,6 @@ public class equipoAlmacenamiento implements Serializable{
 
 
 
+
 	
 }
